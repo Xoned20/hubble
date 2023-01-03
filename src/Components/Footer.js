@@ -1,10 +1,12 @@
 import React from 'react'
+import SocialIcons from './SocialIcons'
 import { Container } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
+import { StyledFooter } from './styles/Footer.styled'
 
 const Footer = () => {
   return (
-    <div>
+    <StyledFooter>
         <Container>
             <img src="./images/logo_white.svg" alt="" />
 
@@ -12,9 +14,7 @@ const Footer = () => {
                 <ul>
                     <li>
                     Lorem Ipsum has been the industry's standard dummy 
-                    text ever since the 1500s, when an unknown printer 
-                    took a galley of type and scrambled it to make a type 
-                    specimen book.
+                    text ever since the 1500s and it is also like Bala Blu.
                     </li>
                     <li>
                         +234-81-234-343-22
@@ -34,12 +34,12 @@ const Footer = () => {
                     <li>Contact Us</li>
                 </ul>
 
-                {/* Social Icons */}
+                <SocialIcons />
             </Flex>
 
             <p>&copy; 2021 huddle, All rights reserved</p>
         </Container>
-    </div>
+    </StyledFooter>
   )
 }
 
